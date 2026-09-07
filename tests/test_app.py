@@ -18,7 +18,7 @@ def test_health(client):
 
 def test_create_and_list(client):
     r = client.post("/tasks", json={"title": "write lab 1"})
-    assert r.status_code == 418
+    assert r.status_code == 201
     r = client.get("/tasks")
     assert len(r.get_json()) == 1
 

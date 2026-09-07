@@ -20,7 +20,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Lint
-        run: flake8 --max-line-length 100 app.py test_app.py
+        run: flake8 --max-line-length 100 app.py tests/
 
       - name: Test
         run: pytest -v

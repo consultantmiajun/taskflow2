@@ -45,7 +45,7 @@ def count_request(response):
 
 @app.get("/health")
 def health():
-    return jsonify(status="ok", version="2.0"), 200
+    return jsonify(status="ok", version="2.2", message="hello GITAM"), 200
 
 
 @app.post("/tasks")
